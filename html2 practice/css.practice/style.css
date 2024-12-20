@@ -1,0 +1,24 @@
+h1{
+    color:blueviolet;
+}
+p{
+  color:rgb(130, 186, 238);  
+}
+button{
+    color: brown;
+}
+body{
+    background-color: rgb(5, 226, 241);
+}
+div {
+    height:100px;
+    background-color: aqua;
+    width: 50px;
+    border: dotted;
+    margin: 2%;
+    padding: 0%;
+    display: inline;
+    z-index: calc();
+    overflow: scroll;
+  }
+  

@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: 192.168.0.173  # Replace with your MySQL server host (e.g., db, localhost, or IP)
+      PMA_USER: pratik  # Replace with your MySQL user (optional)
+      PMA_PASSWORD: Morya@2143  # Replace with your MySQL password (optional)
+      PMA_ARBITRARY: 1
+    ports:
+      - "8080:80"  # phpMyAdmin will be accessible at http://localhost:8080
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to our luxurious hotel. Experience comfort and elegance with premium services.">
+    <meta name="keywords" content="hotel, luxury, booking, rooms, comfort">
+    <meta name="author" content="Hotel Paradise">
+    <title>Hotel Paradise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('hotel-banner.jpg') no-repeat center center/cover;
+            color: rgb(87, 36, 36);
+            padding: 3rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        nav {
+            background-color: #2503e6;
+            color: rgb(91, 192, 24);
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: rgb(92, 210, 240);
+            text-decoration: none;
+        }
+        .section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .rooms img, .services img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .rooms, .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+            justify-content: center;
+        }
+        form input, form select {
+            padding: 0.5rem;
+            width: 90%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Hotel Paradise</h1>
+        <p>Experience luxury and comfort in the heart of the city.</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#rooms">Rooms</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Hotel Paradise is your gateway to comfort and luxury. Located in the heart of the city, we offer premium services and exquisite rooms for all our guests.</p>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section">
+        <h2>Our Rooms</h2>
+        <div class="rooms">
+            <div>
+                <img src="room1.jpg" alt="Deluxe Room">
+                <h3>Deluxe Room</h3>
+                <p>Starting at $200/night</p>
+            </div>
+            <div>
+                <img src="room2.jpg" alt="Suite">
+                <h3>Suite</h3>
+                <p>Starting at $350/night</p>
+            </div>
+            <div>
+                <img src="room3.jpg" alt="Family Room">
+                <h3>Family Room</h3>
+                <p>Starting at $300/night</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div>
+                <img src="spa.jpg" alt="Spa Services">
+                <h3>Spa & Wellness</h3>
+            </div>
+            <div>
+                <img src="restaurant.jpg" alt="Restaurant">
+                <h3>Fine Dining</h3>
+            </div>
+            <div>
+                <img src="gym.jpg" alt="Gym">
+                <h3>Fitness Center</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="section">
+        <h2>Book Your Stay</h2>
+        <form action="booking_submit.php" method="post">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <input type="date" name="checkin" placeholder="Check-in Date" required>
+            <input type="date" name="checkout" placeholder="Check-out Date" required>
+            <select name="room_type" required>
+                <option value="" disabled selected>Select Room Type</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Suite</option>
+                <option value="family">Family Room</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@hotelparadise.com | Phone: +1-123-456-7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Hotel Paradise. All Rights Reserved.</p>
+        <p>Follow us on 
+            <a href="https://twitter.com" target="_blank">Twitter</a> | 
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
